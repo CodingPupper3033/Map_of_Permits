@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+        <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+        <script src="https://www.amcharts.com/lib/4/geodata/usaHigh.js"></script>
+        <script src="js/ALL-Data.js"></script>
+        <script src="js/selectedState.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="jumbotron bg-dark rounded-bottom container col-12">
+            <div class="row">
+                <div class="col-2">
+                    <h1 class="text-white"> State Permits </h1>
+                </div>
+                
+                <div class="col-8" id="previewMap"></div>
+                <div class="col-2">
+                    <h4 class="text-white"> Created by: Joshua Miller & Brayden Meech </h4>
+                </div>
+            </div>                
+        </div>
+        
+        <div class="col-12 container border">
+            <div class="row">
+                <div class="list-group col-3" id="listOfStates">
+                    <div class="row">
+                        <h6 class="es col-3 list-group-item active" onclick="selectState('IS')"> IS </h6>
+                        <h6 class="es col-3 list-group-item" onclick="selectState('AK')"> AK </h6>
+                        <h6 class="es col-3 list-group-item" onclick="selectState('AL')"> AL </h6>
+                        <h6 class="es col-3 list-group-item" onclick="selectState('AR')"> AR </h6>
+                    </div>
+                    <div class="row">
+                        <h6 class="es col-3 list-group-item" onclick="selectState('AZ')"> AZ </h6>
+                        <h6 class="es col-3 list-group-item" onclick="selectState('CA')"> CA </h6>
+                        <h6 class="es col-3 list-group-item" onclick="selectState('CO')"> CO </h6>
+                        <h6 class="es col-3 list-group-item" onclick="selectState('CT')"> CT </h6>
+                    </div>        
+                </div>
+            
+                <div id="chartdiv" class="col-9" style="height:50vh"></div>
+            </div>
+        </div>
+        
+        
+        
+    
+        <script src="js/map.js"></script>
+    </body>
+</html>
