@@ -155,7 +155,7 @@ USAData.IS = [
   },
   {
     id: "US-RI",
-    value: 0
+    value: 2
   },
   {
     id: "US-SC",
@@ -358,7 +358,7 @@ USAData.AK = [
   },
   {
     id: "US-RI",
-    value: 0
+    value: 2
   },
   {
     id: "US-SC",
